@@ -98,7 +98,7 @@
             }
           }
         },
-        "description": "Find Tag objects using query parameter filter criteria.",
+        "description": "Find Tags using query parameter filter criteria.",
         "operationId": "GetTag",
         "parameters": [
           {
@@ -231,7 +231,7 @@
             }
           }
         },
-        "description": "Create new Tag object.",
+        "description": "Create new Tag.",
         "operationId": "CreateTag",
         "requestBody": {
           "content": {
@@ -322,7 +322,7 @@
             }
           }
         },
-        "description": "Find Tag object by tagId URL path parameter.",
+        "description": "Find Tag by tagId URL path parameter.",
         "operationId": "GetTagById",
         "parameters": [
           {
@@ -435,7 +435,7 @@
             }
           }
         },
-        "description": "Modify Tag object.\nYou must provide modified id and all modfied attributes in request body.\n",
+        "description": "Modify Tag.\nYou must provide modified id and all modfied attributes in request body.\n",
         "operationId": "ModifyTag",
         "requestBody": {
           "content": {
@@ -526,7 +526,7 @@
             }
           }
         },
-        "description": "Delete existing Tag object\nNote: This is only allowed if Tag object is in DRAFT status\n",
+        "description": "Delete existing Tag\nNote: This is only allowed if Tag is in DRAFT status\n",
         "operationId": "DeleteTag",
         "x-annotation-common.oid": 50,
         "x-annotation-common.acl": "modifyTag"
@@ -1069,7 +1069,7 @@
             }
           }
         },
-        "description": "Find Object assignments using query parameter filter criteria.",
+        "description": "Find TagAssignments using query parameter filter criteria.",
         "operationId": "GetTagAssignment",
         "parameters": [
           {
@@ -1202,7 +1202,7 @@
             }
           }
         },
-        "description": "Create new Object assignments.",
+        "description": "Create new TagAssignment.",
         "operationId": "CreateTagAssignment",
         "requestBody": {
           "content": {
@@ -1293,7 +1293,7 @@
             }
           }
         },
-        "description": "Find Object assignments by tagAssignmentId URL path parameter.",
+        "description": "Find TagAssignment by tagAssignmentId URL path parameter.",
         "operationId": "GetTagAssignmentById",
         "parameters": [
           {
@@ -1406,7 +1406,7 @@
             }
           }
         },
-        "description": "Modify Object assignments.\nYou must provide modified id and all modfied attributes in request body.\n",
+        "description": "Modify TagAssignment.\nYou must provide modified id and all modfied attributes in request body.\n",
         "operationId": "ModifyTagAssignment",
         "requestBody": {
           "content": {
@@ -1497,7 +1497,7 @@
             }
           }
         },
-        "description": "Delete existing Object assignments\nNote: This is only allowed if Object assignments is in DRAFT status\n",
+        "description": "Delete existing TagAssignment\nNote: This is only allowed if TagAssignment is in DRAFT status\n",
         "operationId": "DeleteTagAssignment",
         "x-annotation-common.oid": 50,
         "x-annotation-common.acl": "modifyTagAssignment"
@@ -2040,7 +2040,7 @@
             }
           }
         },
-        "description": "Find TaggedObject objects using query parameter filter criteria.",
+        "description": "Find TaggedObjects using query parameter filter criteria.",
         "operationId": "GetTaggedObject",
         "parameters": [
           {
@@ -2173,7 +2173,7 @@
             }
           }
         },
-        "description": "Create new TaggedObject object.",
+        "description": "Create new TaggedObject.",
         "operationId": "CreateTaggedObject",
         "requestBody": {
           "content": {
@@ -2264,7 +2264,7 @@
             }
           }
         },
-        "description": "Find TaggedObject object by taggedObjectId URL path parameter.",
+        "description": "Find TaggedObject by taggedObjectId URL path parameter.",
         "operationId": "GetTaggedObjectById",
         "parameters": [
           {
@@ -2377,7 +2377,7 @@
             }
           }
         },
-        "description": "Modify TaggedObject object.\nYou must provide modified id and all modfied attributes in request body.\n",
+        "description": "Modify TaggedObject.\nYou must provide modified id and all modfied attributes in request body.\n",
         "operationId": "ModifyTaggedObject",
         "requestBody": {
           "content": {
@@ -2468,7 +2468,7 @@
             }
           }
         },
-        "description": "Delete existing TaggedObject object\nNote: This is only allowed if TaggedObject object is in DRAFT status\n",
+        "description": "Delete existing TaggedObject\nNote: This is only allowed if TaggedObject is in DRAFT status\n",
         "operationId": "DeleteTaggedObject",
         "x-annotation-common.oid": 50,
         "x-annotation-common.acl": "modifyTaggedObject"
@@ -2558,7 +2558,7 @@
             }
           }
         },
-        "description": "Find Acl objects using query parameter filter criteria.",
+        "description": "Find Acls using query parameter filter criteria.",
         "operationId": "GetAcl",
         "parameters": [
           {
@@ -2691,7 +2691,7 @@
             }
           }
         },
-        "description": "Create new Acl object.",
+        "description": "Create new Acl.",
         "operationId": "CreateAcl",
         "requestBody": {
           "content": {
@@ -2782,7 +2782,7 @@
             }
           }
         },
-        "description": "Find Acl object by aclId URL path parameter.",
+        "description": "Find Acl by aclId URL path parameter.",
         "operationId": "GetAclById",
         "parameters": [
           {
@@ -2895,7 +2895,7 @@
             }
           }
         },
-        "description": "Modify Acl object.\nYou must provide modified id and all modfied attributes in request body.\n",
+        "description": "Modify Acl.\nYou must provide modified id and all modfied attributes in request body.\n",
         "operationId": "ModifyAcl",
         "requestBody": {
           "content": {
@@ -2986,7 +2986,7 @@
             }
           }
         },
-        "description": "Delete existing Acl object\nNote: This is only allowed if Acl object is in DRAFT status\n",
+        "description": "Delete existing Acl\nNote: This is only allowed if Acl is in DRAFT status\n",
         "operationId": "DeleteAcl",
         "x-annotation-common.oid": 50,
         "x-annotation-common.acl": "modifyAcl"
