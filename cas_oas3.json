@@ -2,24 +2,20 @@
   "openapi": "3.0.0",
   "info": {
     "title": "CAS User Management API",
-    "version": "v1",
-    "description": "cas Management\n"
+    "version": "25.74.10",
+    "description": "This is an API that helps CSP (connectivity service provider) administrators manage user accounts, permissions, and access control.\n"
   },
   "servers": [
     {
-      "url": "https://${baseUri}/",
+      "url": "https://{cspUrl}/services/cas/v1",
       "variables": {
-        "baseUri": {
-          "default": "baseUri"
-        }
+        "cspUrl": "cmp-demo.mavoco.com"
       }
     },
     {
-      "url": "http://${baseUri}/",
+      "url": "http://{cspUrl}/services/cas/v1",
       "variables": {
-        "baseUri": {
-          "default": "baseUri"
-        }
+        "cspUrl": "cmp-demo.mavoco.com"
       }
     }
   ],
