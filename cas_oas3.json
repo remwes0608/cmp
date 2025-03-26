@@ -617,7 +617,7 @@
           }
         },
         "description": "Offset-based pagination strategy.\n",
-        "operationId": "Lists Relationships",
+        "operationId": "GetTagAssignmentRelationships",
         "parameters": [
           {
             "$ref": "#/components/parameters/trait_common.filtered_filter"
@@ -740,7 +740,7 @@
           }
         },
         "description": "Add Relationship\n",
-        "operationId": "Add Relationship",
+        "operationId": "AddTagAssignmentRelationship",
         "requestBody": {
           "content": {
             "application/vnd.api+json": {
@@ -755,7 +755,7 @@
       "patch": {
         "responses": {
           "200": {
-            "description": "Relationsips merged successfully",
+            "description": "Relationships merged successfully",
             "content": {
               "application/vnd.api+json": {
                 "schema": {
@@ -856,7 +856,7 @@
           }
         },
         "description": "Merge Relationships\n",
-        "operationId": "Merge Relationships",
+        "operationId": "ModifyTagAssignmentRelationships",
         "requestBody": {
           "content": {
             "application/vnd.api+json": {
@@ -972,7 +972,7 @@
           }
         },
         "description": "Remove Relationships\n",
-        "operationId": "Remove Relationships",
+        "operationId": "RemoveTagAssignmentRelationships",
         "requestBody": {
           "content": {
             "application/vnd.api+json": {
@@ -1588,7 +1588,7 @@
           }
         },
         "description": "Offset-based pagination strategy.\n",
-        "operationId": "Lists Relationships",
+        "operationId": "GetTagRelationships",
         "parameters": [
           {
             "$ref": "#/components/parameters/trait_common.filtered_filter"
@@ -1711,7 +1711,7 @@
           }
         },
         "description": "Add Relationship\n",
-        "operationId": "Add Relationship",
+        "operationId": "AddTagRelationship",
         "requestBody": {
           "content": {
             "application/vnd.api+json": {
@@ -1726,7 +1726,7 @@
       "patch": {
         "responses": {
           "200": {
-            "description": "Relationsips merged successfully",
+            "description": "Relationships merged successfully",
             "content": {
               "application/vnd.api+json": {
                 "schema": {
@@ -1827,7 +1827,7 @@
           }
         },
         "description": "Merge Relationships\n",
-        "operationId": "Merge Relationships",
+        "operationId": "ModifyTagRelationships",
         "requestBody": {
           "content": {
             "application/vnd.api+json": {
@@ -1943,7 +1943,7 @@
           }
         },
         "description": "Remove Relationships\n",
-        "operationId": "Remove Relationships",
+        "operationId": "RemoveTagRelationships",
         "requestBody": {
           "content": {
             "application/vnd.api+json": {
@@ -3624,8 +3624,8 @@
             }
           }
         },
-        "description": "Activate Resource",
-        "operationId": "Activate Resource",
+        "description": "Activate AclDelegation Resource",
+        "operationId": "ActivateAclDelegation",
         "requestBody": {
           "content": {
             "application/vnd.api+json": {
@@ -3752,8 +3752,8 @@
             }
           }
         },
-        "description": "Deactivate Resource",
-        "operationId": "Deactivate Resource",
+        "description": "Deactivate AclDelegation Resource",
+        "operationId": "DeactivateAclDelegation",
         "requestBody": {
           "content": {
             "application/vnd.api+json": {
@@ -12168,8 +12168,8 @@
             }
           }
         },
-        "description": "Activate Resource",
-        "operationId": "Activate Resource",
+        "description": "Activate Casuser Resource",
+        "operationId": "ActivateCasuser",
         "requestBody": {
           "content": {
             "application/vnd.api+json": {
@@ -12306,8 +12306,8 @@
             }
           }
         },
-        "description": "Deactivate Resource",
-        "operationId": "Deactivate Resource",
+        "description": "Deactivate Casuser Resource",
+        "operationId": "DeactivateCasuser",
         "requestBody": {
           "content": {
             "application/vnd.api+json": {
@@ -21140,7 +21140,7 @@
   "components": {
     "schemas": {
       "TagRequest": {
-        "title": "Tag object Data Request",
+        "title": "TagRequest",
         "description": "Tag based request",
         "type": "object",
         "properties": {
@@ -21153,7 +21153,7 @@
         ]
       },
       "TagResponse": {
-        "title": "Tag object Data Response",
+        "title": "TagResponse",
         "description": "Tag based response. Returns single lib.Tag object",
         "type": "object",
         "properties": {
@@ -21166,7 +21166,7 @@
         ]
       },
       "TagArrayResponse": {
-        "title": "Tag objects Data Response",
+        "title": "TagsResponse",
         "description": "List of Tags response. Returns list of lib.Tag objects",
         "type": "object",
         "properties": {
@@ -21224,7 +21224,7 @@
         ]
       },
       "TagAssignmentRequest": {
-        "title": "Object assignments Data Request",
+        "title": "TagAssignmentRequest",
         "description": "TagAssignment based request",
         "type": "object",
         "properties": {
@@ -21237,7 +21237,7 @@
         ]
       },
       "TagAssignmentResponse": {
-        "title": "Object assignments Data Response",
+        "title": "TagAssignmentResponse",
         "description": "TagAssignment based response. Returns single lib.TagAssignment object",
         "type": "object",
         "properties": {
@@ -21250,7 +21250,7 @@
         ]
       },
       "TagAssignmentArrayResponse": {
-        "title": "Object assignments Data Response",
+        "title": "TagAssignmentsResponse",
         "description": "List of TagAssignments response. Returns list of lib.TagAssignment objects",
         "type": "object",
         "properties": {
@@ -21308,7 +21308,7 @@
         ]
       },
       "TaggedObjectRequest": {
-        "title": "TaggedObject object Data Request",
+        "title": "TaggedObjectRequest",
         "description": "TaggedObject based request",
         "type": "object",
         "properties": {
@@ -21321,7 +21321,7 @@
         ]
       },
       "TaggedObjectResponse": {
-        "title": "TaggedObject object Data Response",
+        "title": "TaggedObjectResponse",
         "description": "TaggedObject based response. Returns single lib.TaggedObject object",
         "type": "object",
         "properties": {
@@ -21334,7 +21334,7 @@
         ]
       },
       "TaggedObjectArrayResponse": {
-        "title": "TaggedObject objects Data Response",
+        "title": "TaggedObjectsResponse",
         "description": "List of TaggedObjects response. Returns list of lib.TaggedObject objects",
         "type": "object",
         "properties": {
@@ -21350,7 +21350,7 @@
         ]
       },
       "AclRequest": {
-        "title": "Acl object Data Request",
+        "title": "AclRequest",
         "description": "Acl based request",
         "type": "object",
         "properties": {
@@ -21363,7 +21363,7 @@
         ]
       },
       "AclResponse": {
-        "title": "Acl object Data Response",
+        "title": "AclResponse",
         "description": "Acl based response. Returns single lib.Acl object",
         "type": "object",
         "properties": {
@@ -21376,7 +21376,7 @@
         ]
       },
       "AclArrayResponse": {
-        "title": "Acl objects Data Response",
+        "title": "AclsResponse",
         "description": "List of Acls response. Returns list of lib.Acl objects",
         "type": "object",
         "properties": {
@@ -21392,7 +21392,7 @@
         ]
       },
       "AclDelegationRequest": {
-        "title": "AclDelegation object Data Request",
+        "title": "AclDelegationRequest",
         "description": "AclDelegation based request",
         "type": "object",
         "properties": {
@@ -21405,7 +21405,7 @@
         ]
       },
       "AclDelegationResponse": {
-        "title": "AclDelegation object Data Response",
+        "title": "AclDelegationResponse",
         "description": "AclDelegation based response. Returns single lib.AclDelegation object",
         "type": "object",
         "properties": {
@@ -21418,7 +21418,7 @@
         ]
       },
       "AclDelegationArrayResponse": {
-        "title": "AclDelegation objects Data Response",
+        "title": "AclDelegationsResponse",
         "description": "List of AclDelegations response. Returns list of lib.AclDelegation objects",
         "type": "object",
         "properties": {
@@ -21486,7 +21486,7 @@
         ]
       },
       "AclInfoLocalizationRequest": {
-        "title": "AclInfoLocalization object Data Request",
+        "title": "AclInfoLocalizationRequest",
         "description": "AclInfoLocalization based request",
         "type": "object",
         "properties": {
@@ -21499,7 +21499,7 @@
         ]
       },
       "AclInfoLocalizationResponse": {
-        "title": "AclInfoLocalization object Data Response",
+        "title": "AclInfoLocalizationResponse",
         "description": "AclInfoLocalization based response. Returns single lib.AclInfoLocalization object",
         "type": "object",
         "properties": {
@@ -21512,7 +21512,7 @@
         ]
       },
       "AclInfoLocalizationArrayResponse": {
-        "title": "AclInfoLocalization objects Data Response",
+        "title": "AclInfoLocalizationsResponse",
         "description": "List of AclInfoLocalizations response. Returns list of lib.AclInfoLocalization objects",
         "type": "object",
         "properties": {
@@ -21528,7 +21528,7 @@
         ]
       },
       "AclValueRequest": {
-        "title": "AclValue object Data Request",
+        "title": "AclValueRequest",
         "description": "AclValue based request",
         "type": "object",
         "properties": {
@@ -21541,7 +21541,7 @@
         ]
       },
       "AclValueResponse": {
-        "title": "AclValue object Data Response",
+        "title": "AclValueResponse",
         "description": "AclValue based response. Returns single lib.AclValue object",
         "type": "object",
         "properties": {
@@ -21554,7 +21554,7 @@
         ]
       },
       "AclValueArrayResponse": {
-        "title": "AclValue objects Data Response",
+        "title": "AclValuesResponse",
         "description": "List of AclValues response. Returns list of lib.AclValue objects",
         "type": "object",
         "properties": {
@@ -21570,7 +21570,7 @@
         ]
       },
       "AclValueBlobRequest": {
-        "title": "AclValueBlob object Data Request",
+        "title": "AclValueBlobRequest",
         "description": "AclValueBlob based request",
         "type": "object",
         "properties": {
@@ -21583,7 +21583,7 @@
         ]
       },
       "AclValueBlobResponse": {
-        "title": "AclValueBlob object Data Response",
+        "title": "AclValueBlobResponse",
         "description": "AclValueBlob based response. Returns single lib.AclValueBlob object",
         "type": "object",
         "properties": {
@@ -21596,7 +21596,7 @@
         ]
       },
       "AclValueBlobArrayResponse": {
-        "title": "AclValueBlob objects Data Response",
+        "title": "AclValueBlobsResponse",
         "description": "List of AclValueBlobs response. Returns list of lib.AclValueBlob objects",
         "type": "object",
         "properties": {
@@ -21612,7 +21612,7 @@
         ]
       },
       "AccessControlItemRequest": {
-        "title": "AccessControlItem object Data Request",
+        "title": "AccessControlItemRequest",
         "description": "AccessControlItem based request",
         "type": "object",
         "properties": {
@@ -21625,7 +21625,7 @@
         ]
       },
       "AccessControlItemResponse": {
-        "title": "AccessControlItem object Data Response",
+        "title": "AccessControlItemResponse",
         "description": "AccessControlItem based response. Returns single lib.AccessControlItem object",
         "type": "object",
         "properties": {
@@ -21638,7 +21638,7 @@
         ]
       },
       "AccessControlItemArrayResponse": {
-        "title": "AccessControlItem objects Data Response",
+        "title": "AccessControlItemsResponse",
         "description": "List of AccessControlItems response. Returns list of lib.AccessControlItem objects",
         "type": "object",
         "properties": {
@@ -21654,7 +21654,7 @@
         ]
       },
       "AccessControlItemValueRequest": {
-        "title": "AccessControlItemValue object Data Request",
+        "title": "AccessControlItemValueRequest",
         "description": "AccessControlItemValue based request",
         "type": "object",
         "properties": {
@@ -21667,7 +21667,7 @@
         ]
       },
       "AccessControlItemValueResponse": {
-        "title": "AccessControlItemValue object Data Response",
+        "title": "AccessControlItemValueResponse",
         "description": "AccessControlItemValue based response. Returns single lib.AccessControlItemValue object",
         "type": "object",
         "properties": {
@@ -21680,7 +21680,7 @@
         ]
       },
       "AccessControlItemValueArrayResponse": {
-        "title": "AccessControlItemValue objects Data Response",
+        "title": "AccessControlItemValuesResponse",
         "description": "List of AccessControlItemValues response. Returns list of lib.AccessControlItemValue objects",
         "type": "object",
         "properties": {
@@ -21696,7 +21696,7 @@
         ]
       },
       "AccessControlItemValueBlobRequest": {
-        "title": "AccessControlItemValueBlob object Data Request",
+        "title": "AccessControlItemValueBlobRequest",
         "description": "AccessControlItemValueBlob based request",
         "type": "object",
         "properties": {
@@ -21709,7 +21709,7 @@
         ]
       },
       "AccessControlItemValueBlobResponse": {
-        "title": "AccessControlItemValueBlob object Data Response",
+        "title": "AccessControlItemValueBlobResponse",
         "description": "AccessControlItemValueBlob based response. Returns single lib.AccessControlItemValueBlob object",
         "type": "object",
         "properties": {
@@ -21722,7 +21722,7 @@
         ]
       },
       "AccessControlItemValueBlobArrayResponse": {
-        "title": "AccessControlItemValueBlob objects Data Response",
+        "title": "AccessControlItemValueBlobsResponse",
         "description": "List of AccessControlItemValueBlobs response. Returns list of lib.AccessControlItemValueBlob objects",
         "type": "object",
         "properties": {
@@ -21738,7 +21738,7 @@
         ]
       },
       "UserRequest": {
-        "title": "User object Data Request",
+        "title": "UserRequest",
         "description": "User based request",
         "type": "object",
         "properties": {
@@ -21751,7 +21751,7 @@
         ]
       },
       "UserResponse": {
-        "title": "User object Data Response",
+        "title": "UserResponse",
         "description": "User based response. Returns single lib.User object",
         "type": "object",
         "properties": {
@@ -21764,7 +21764,7 @@
         ]
       },
       "UserArrayResponse": {
-        "title": "User objects Data Response",
+        "title": "UsersResponse",
         "description": "List of Users response. Returns list of lib.User objects",
         "type": "object",
         "properties": {
@@ -21780,7 +21780,7 @@
         ]
       },
       "UserPasswordTokenRequest": {
-        "title": "UserPasswordToken object Data Request",
+        "title": "UserPasswordTokenRequest",
         "description": "UserPasswordToken based request",
         "type": "object",
         "properties": {
@@ -21793,7 +21793,7 @@
         ]
       },
       "UserPasswordTokenResponse": {
-        "title": "UserPasswordToken object Data Response",
+        "title": "UserPasswordTokenResponse",
         "description": "UserPasswordToken based response. Returns single lib.UserPasswordToken object",
         "type": "object",
         "properties": {
@@ -21806,7 +21806,7 @@
         ]
       },
       "UserPasswordTokenArrayResponse": {
-        "title": "UserPasswordToken objects Data Response",
+        "title": "UserPasswordTokensResponse",
         "description": "List of UserPasswordTokens response. Returns list of lib.UserPasswordToken objects",
         "type": "object",
         "properties": {
@@ -21822,7 +21822,7 @@
         ]
       },
       "OrganizationUnitRequest": {
-        "title": "OrganizationUnit object Data Request",
+        "title": "OrganizationUnitRequest",
         "description": "OrganizationUnit based request",
         "type": "object",
         "properties": {
@@ -21835,7 +21835,7 @@
         ]
       },
       "OrganizationUnitResponse": {
-        "title": "OrganizationUnit object Data Response",
+        "title": "OrganizationUnitResponse",
         "description": "OrganizationUnit based response. Returns single lib.OrganizationUnit object",
         "type": "object",
         "properties": {
@@ -21848,7 +21848,7 @@
         ]
       },
       "OrganizationUnitArrayResponse": {
-        "title": "OrganizationUnit objects Data Response",
+        "title": "OrganizationUnitsResponse",
         "description": "List of OrganizationUnits response. Returns list of lib.OrganizationUnit objects",
         "type": "object",
         "properties": {
@@ -21864,7 +21864,7 @@
         ]
       },
       "OrganizationUnitAddressRequest": {
-        "title": "OrganizationUnitAddress object Data Request",
+        "title": "OrganizationUnitAddressRequest",
         "description": "OrganizationUnitAddress based request",
         "type": "object",
         "properties": {
@@ -21877,7 +21877,7 @@
         ]
       },
       "OrganizationUnitAddressResponse": {
-        "title": "OrganizationUnitAddress object Data Response",
+        "title": "OrganizationUnitAddressResponse",
         "description": "OrganizationUnitAddress based response. Returns single lib.OrganizationUnitAddress object",
         "type": "object",
         "properties": {
@@ -21890,7 +21890,7 @@
         ]
       },
       "OrganizationUnitAddressArrayResponse": {
-        "title": "OrganizationUnitAddress objects Data Response",
+        "title": "OrganizationUnitAddressesResponse",
         "description": "List of OrganizationUnitAddresses response. Returns list of lib.OrganizationUnitAddress objects",
         "type": "object",
         "properties": {
@@ -21906,7 +21906,7 @@
         ]
       },
       "UsergroupRequest": {
-        "title": "Usergroup object Data Request",
+        "title": "UsergroupRequest",
         "description": "Usergroup based request",
         "type": "object",
         "properties": {
@@ -21919,7 +21919,7 @@
         ]
       },
       "UsergroupResponse": {
-        "title": "Usergroup object Data Response",
+        "title": "UsergroupResponse",
         "description": "Usergroup based response. Returns single lib.Usergroup object",
         "type": "object",
         "properties": {
@@ -21932,7 +21932,7 @@
         ]
       },
       "UsergroupArrayResponse": {
-        "title": "Usergroup objects Data Response",
+        "title": "UsergroupsResponse",
         "description": "List of Usergroups response. Returns list of lib.Usergroup objects",
         "type": "object",
         "properties": {
@@ -21948,7 +21948,7 @@
         ]
       },
       "UsergroupUserRequest": {
-        "title": "UsergroupUser object Data Request",
+        "title": "UsergroupUserRequest",
         "description": "UsergroupUser based request",
         "type": "object",
         "properties": {
@@ -21961,7 +21961,7 @@
         ]
       },
       "UsergroupUserResponse": {
-        "title": "UsergroupUser object Data Response",
+        "title": "UsergroupUserResponse",
         "description": "UsergroupUser based response. Returns single lib.UsergroupUser object",
         "type": "object",
         "properties": {
@@ -21974,7 +21974,7 @@
         ]
       },
       "UsergroupUserArrayResponse": {
-        "title": "UsergroupUser objects Data Response",
+        "title": "UsergroupUsersResponse",
         "description": "List of UsergroupUsers response. Returns list of lib.UsergroupUser objects",
         "type": "object",
         "properties": {
@@ -21990,7 +21990,7 @@
         ]
       },
       "ContextRequest": {
-        "title": "Context object Data Request",
+        "title": "ContextRequest",
         "description": "Context based request",
         "type": "object",
         "properties": {
@@ -22003,7 +22003,7 @@
         ]
       },
       "ContextResponse": {
-        "title": "Context object Data Response",
+        "title": "ContextResponse",
         "description": "Context based response. Returns single lib.Context object",
         "type": "object",
         "properties": {
@@ -22016,7 +22016,7 @@
         ]
       },
       "ContextArrayResponse": {
-        "title": "Context objects Data Response",
+        "title": "ContextsResponse",
         "description": "List of Contexts response. Returns list of lib.Context objects",
         "type": "object",
         "properties": {
@@ -22032,7 +22032,7 @@
         ]
       },
       "ContextUserRequest": {
-        "title": "ContextUser object Data Request",
+        "title": "ContextUserRequest",
         "description": "ContextUser based request",
         "type": "object",
         "properties": {
@@ -22045,7 +22045,7 @@
         ]
       },
       "ContextUserResponse": {
-        "title": "ContextUser object Data Response",
+        "title": "ContextUserResponse",
         "description": "ContextUser based response. Returns single lib.ContextUser object",
         "type": "object",
         "properties": {
@@ -22058,7 +22058,7 @@
         ]
       },
       "ContextUserArrayResponse": {
-        "title": "ContextUser objects Data Response",
+        "title": "ContextUsersResponse",
         "description": "List of ContextUsers response. Returns list of lib.ContextUser objects",
         "type": "object",
         "properties": {
@@ -22074,7 +22074,7 @@
         ]
       },
       "AvatarRequest": {
-        "title": "Avatar object Data Request",
+        "title": "AvatarRequest",
         "description": "Avatar based request",
         "type": "object",
         "properties": {
@@ -22087,7 +22087,7 @@
         ]
       },
       "AvatarResponse": {
-        "title": "Avatar object Data Response",
+        "title": "AvatarResponse",
         "description": "Avatar based response. Returns single lib.Avatar object",
         "type": "object",
         "properties": {
@@ -22100,7 +22100,7 @@
         ]
       },
       "AvatarArrayResponse": {
-        "title": "Avatar objects Data Response",
+        "title": "AvatarsResponse",
         "description": "List of Avatars response. Returns list of lib.Avatar objects",
         "type": "object",
         "properties": {
@@ -22116,7 +22116,7 @@
         ]
       },
       "CasuserRequest": {
-        "title": "Casuser object Data Request",
+        "title": "CasuserRequest",
         "description": "Casuser based request",
         "type": "object",
         "properties": {
@@ -22129,7 +22129,7 @@
         ]
       },
       "CasuserResponse": {
-        "title": "Casuser object Data Response",
+        "title": "CasuserResponse",
         "description": "Casuser based response. Returns single lib.Casuser object",
         "type": "object",
         "properties": {
@@ -22142,7 +22142,7 @@
         ]
       },
       "CasuserArrayResponse": {
-        "title": "Casuser objects Data Response",
+        "title": "CasusersResponse",
         "description": "List of Casusers response. Returns list of lib.Casuser objects",
         "type": "object",
         "properties": {
@@ -22210,7 +22210,7 @@
         ]
       },
       "CustomerRequest": {
-        "title": "Customer object Data Request",
+        "title": "CustomerRequest",
         "description": "Customer based request",
         "type": "object",
         "properties": {
@@ -22223,7 +22223,7 @@
         ]
       },
       "CustomerResponse": {
-        "title": "Customer object Data Response",
+        "title": "CustomerResponse",
         "description": "Customer based response. Returns single lib.Customer object",
         "type": "object",
         "properties": {
@@ -22236,7 +22236,7 @@
         ]
       },
       "CustomerArrayResponse": {
-        "title": "Customer objects Data Response",
+        "title": "CustomersResponse",
         "description": "List of Customers response. Returns list of lib.Customer objects",
         "type": "object",
         "properties": {
@@ -22252,7 +22252,7 @@
         ]
       },
       "CspRequest": {
-        "title": "Csp object Data Request",
+        "title": "CspRequest",
         "description": "Csp based request",
         "type": "object",
         "properties": {
@@ -22265,7 +22265,7 @@
         ]
       },
       "CspResponse": {
-        "title": "Csp object Data Response",
+        "title": "CspResponse",
         "description": "Csp based response. Returns single lib.Csp object",
         "type": "object",
         "properties": {
@@ -22278,7 +22278,7 @@
         ]
       },
       "CspArrayResponse": {
-        "title": "Csp objects Data Response",
+        "title": "CspsResponse",
         "description": "List of Csps response. Returns list of lib.Csp objects",
         "type": "object",
         "properties": {
@@ -22294,7 +22294,7 @@
         ]
       },
       "DomainRequest": {
-        "title": "Domain object Data Request",
+        "title": "DomainRequest",
         "description": "Domain based request",
         "type": "object",
         "properties": {
@@ -22307,7 +22307,7 @@
         ]
       },
       "DomainResponse": {
-        "title": "Domain object Data Response",
+        "title": "DomainResponse",
         "description": "Domain based response. Returns single lib.Domain object",
         "type": "object",
         "properties": {
@@ -22320,7 +22320,7 @@
         ]
       },
       "DomainArrayResponse": {
-        "title": "Domain objects Data Response",
+        "title": "DomainsResponse",
         "description": "List of Domains response. Returns list of lib.Domain objects",
         "type": "object",
         "properties": {
@@ -22336,7 +22336,7 @@
         ]
       },
       "EmailTemplatePartRequest": {
-        "title": "EmailTemplatePart object Data Request",
+        "title": "EmailTemplatePartRequest",
         "description": "EmailTemplatePart based request",
         "type": "object",
         "properties": {
@@ -22349,7 +22349,7 @@
         ]
       },
       "EmailTemplatePartResponse": {
-        "title": "EmailTemplatePart object Data Response",
+        "title": "EmailTemplatePartResponse",
         "description": "EmailTemplatePart based response. Returns single lib.EmailTemplatePart object",
         "type": "object",
         "properties": {
@@ -22362,7 +22362,7 @@
         ]
       },
       "EmailTemplatePartArrayResponse": {
-        "title": "EmailTemplatePart objects Data Response",
+        "title": "EmailTemplatePartsResponse",
         "description": "List of EmailTemplateParts response. Returns list of lib.EmailTemplatePart objects",
         "type": "object",
         "properties": {
@@ -22378,7 +22378,7 @@
         ]
       },
       "LogUsrTagRequest": {
-        "title": "LogUsrTag object Data Request",
+        "title": "LogUsrTagRequest",
         "description": "LogUsrTag based request",
         "type": "object",
         "properties": {
@@ -22391,7 +22391,7 @@
         ]
       },
       "LogUsrTagResponse": {
-        "title": "LogUsrTag object Data Response",
+        "title": "LogUsrTagResponse",
         "description": "LogUsrTag based response. Returns single lib.LogUsrTag object",
         "type": "object",
         "properties": {
@@ -22404,7 +22404,7 @@
         ]
       },
       "LogUsrTagArrayResponse": {
-        "title": "LogUsrTag objects Data Response",
+        "title": "LogUsrTagsResponse",
         "description": "List of LogUsrTags response. Returns list of lib.LogUsrTag objects",
         "type": "object",
         "properties": {
@@ -22420,7 +22420,7 @@
         ]
       },
       "LogUsrTagAssignmentRequest": {
-        "title": "LogUsrTagAssignment object Data Request",
+        "title": "LogUsrTagAssignmentRequest",
         "description": "LogUsrTagAssignment based request",
         "type": "object",
         "properties": {
@@ -22433,7 +22433,7 @@
         ]
       },
       "LogUsrTagAssignmentResponse": {
-        "title": "LogUsrTagAssignment object Data Response",
+        "title": "LogUsrTagAssignmentResponse",
         "description": "LogUsrTagAssignment based response. Returns single lib.LogUsrTagAssignment object",
         "type": "object",
         "properties": {
@@ -22446,7 +22446,7 @@
         ]
       },
       "LogUsrTagAssignmentArrayResponse": {
-        "title": "LogUsrTagAssignment objects Data Response",
+        "title": "LogUsrTagAssignmentsResponse",
         "description": "List of LogUsrTagAssignments response. Returns list of lib.LogUsrTagAssignment objects",
         "type": "object",
         "properties": {
@@ -22462,7 +22462,7 @@
         ]
       },
       "MessageLocalizationRequest": {
-        "title": "MessageLocalization object Data Request",
+        "title": "MessageLocalizationRequest",
         "description": "MessageLocalization based request",
         "type": "object",
         "properties": {
@@ -22475,7 +22475,7 @@
         ]
       },
       "MessageLocalizationResponse": {
-        "title": "MessageLocalization object Data Response",
+        "title": "MessageLocalizationResponse",
         "description": "MessageLocalization based response. Returns single lib.MessageLocalization object",
         "type": "object",
         "properties": {
@@ -22488,7 +22488,7 @@
         ]
       },
       "MessageLocalizationArrayResponse": {
-        "title": "MessageLocalization objects Data Response",
+        "title": "MessageLocalizationsResponse",
         "description": "List of MessageLocalizations response. Returns list of lib.MessageLocalization objects",
         "type": "object",
         "properties": {
@@ -22504,7 +22504,7 @@
         ]
       },
       "MessageTemplateRequest": {
-        "title": "MessageTemplate object Data Request",
+        "title": "MessageTemplateRequest",
         "description": "MessageTemplate based request",
         "type": "object",
         "properties": {
@@ -22517,7 +22517,7 @@
         ]
       },
       "MessageTemplateResponse": {
-        "title": "MessageTemplate object Data Response",
+        "title": "MessageTemplateResponse",
         "description": "MessageTemplate based response. Returns single lib.MessageTemplate object",
         "type": "object",
         "properties": {
@@ -22530,7 +22530,7 @@
         ]
       },
       "MessageTemplateArrayResponse": {
-        "title": "MessageTemplate objects Data Response",
+        "title": "MessageTemplatesResponse",
         "description": "List of MessageTemplates response. Returns list of lib.MessageTemplate objects",
         "type": "object",
         "properties": {
@@ -22546,7 +22546,7 @@
         ]
       },
       "ModuleRequest": {
-        "title": "Module object Data Request",
+        "title": "ModuleRequest",
         "description": "Module based request",
         "type": "object",
         "properties": {
@@ -22559,7 +22559,7 @@
         ]
       },
       "ModuleResponse": {
-        "title": "Module object Data Response",
+        "title": "ModuleResponse",
         "description": "Module based response. Returns single lib.Module object",
         "type": "object",
         "properties": {
@@ -22572,7 +22572,7 @@
         ]
       },
       "ModuleArrayResponse": {
-        "title": "Module objects Data Response",
+        "title": "ModulesResponse",
         "description": "List of Modules response. Returns list of lib.Module objects",
         "type": "object",
         "properties": {
@@ -22588,7 +22588,7 @@
         ]
       },
       "NotificationRequest": {
-        "title": "Notification object Data Request",
+        "title": "NotificationRequest",
         "description": "Notification based request",
         "type": "object",
         "properties": {
@@ -22601,7 +22601,7 @@
         ]
       },
       "NotificationResponse": {
-        "title": "Notification object Data Response",
+        "title": "NotificationResponse",
         "description": "Notification based response. Returns single lib.Notification object",
         "type": "object",
         "properties": {
@@ -22614,7 +22614,7 @@
         ]
       },
       "NotificationArrayResponse": {
-        "title": "Notification objects Data Response",
+        "title": "NotificationsResponse",
         "description": "List of Notifications response. Returns list of lib.Notification objects",
         "type": "object",
         "properties": {
@@ -22630,7 +22630,7 @@
         ]
       },
       "OrgunitRequest": {
-        "title": "Orgunit object Data Request",
+        "title": "OrgunitRequest",
         "description": "Orgunit based request",
         "type": "object",
         "properties": {
@@ -22643,7 +22643,7 @@
         ]
       },
       "OrgunitResponse": {
-        "title": "Orgunit object Data Response",
+        "title": "OrgunitResponse",
         "description": "Orgunit based response. Returns single lib.Orgunit object",
         "type": "object",
         "properties": {
@@ -22656,7 +22656,7 @@
         ]
       },
       "OrgunitArrayResponse": {
-        "title": "Orgunit objects Data Response",
+        "title": "OrgunitsResponse",
         "description": "List of Orgunits response. Returns list of lib.Orgunit objects",
         "type": "object",
         "properties": {
@@ -22672,7 +22672,7 @@
         ]
       },
       "PersonRequest": {
-        "title": "Person object Data Request",
+        "title": "PersonRequest",
         "description": "Person based request",
         "type": "object",
         "properties": {
@@ -22685,7 +22685,7 @@
         ]
       },
       "PersonResponse": {
-        "title": "Person object Data Response",
+        "title": "PersonResponse",
         "description": "Person based response. Returns single lib.Person object",
         "type": "object",
         "properties": {
@@ -22698,7 +22698,7 @@
         ]
       },
       "PersonArrayResponse": {
-        "title": "Person objects Data Response",
+        "title": "PeopleResponse",
         "description": "List of People response. Returns list of lib.Person objects",
         "type": "object",
         "properties": {
@@ -22714,7 +22714,7 @@
         ]
       },
       "CasResourceRequest": {
-        "title": "CasResource object Data Request",
+        "title": "CasResourceRequest",
         "description": "CasResource based request",
         "type": "object",
         "properties": {
@@ -22727,7 +22727,7 @@
         ]
       },
       "CasResourceResponse": {
-        "title": "CasResource object Data Response",
+        "title": "CasResourceResponse",
         "description": "CasResource based response. Returns single lib.CasResource object",
         "type": "object",
         "properties": {
@@ -22740,7 +22740,7 @@
         ]
       },
       "CasResourceArrayResponse": {
-        "title": "CasResource objects Data Response",
+        "title": "CasResourcesResponse",
         "description": "List of CasResources response. Returns list of lib.CasResource objects",
         "type": "object",
         "properties": {
@@ -22756,7 +22756,7 @@
         ]
       },
       "ResourceValueRequest": {
-        "title": "ResourceValue object Data Request",
+        "title": "ResourceValueRequest",
         "description": "ResourceValue based request",
         "type": "object",
         "properties": {
@@ -22769,7 +22769,7 @@
         ]
       },
       "ResourceValueResponse": {
-        "title": "ResourceValue object Data Response",
+        "title": "ResourceValueResponse",
         "description": "ResourceValue based response. Returns single lib.ResourceValue object",
         "type": "object",
         "properties": {
@@ -22782,7 +22782,7 @@
         ]
       },
       "ResourceValueArrayResponse": {
-        "title": "ResourceValue objects Data Response",
+        "title": "ResourceValuesResponse",
         "description": "List of ResourceValues response. Returns list of lib.ResourceValue objects",
         "type": "object",
         "properties": {
@@ -22798,7 +22798,7 @@
         ]
       },
       "AuditRecordRequest": {
-        "title": "AuditRecord object Data Request",
+        "title": "AuditRecordRequest",
         "description": "AuditRecord based request",
         "type": "object",
         "properties": {
@@ -22811,7 +22811,7 @@
         ]
       },
       "AuditRecordResponse": {
-        "title": "AuditRecord object Data Response",
+        "title": "AuditRecordResponse",
         "description": "AuditRecord based response. Returns single lib.AuditRecord object",
         "type": "object",
         "properties": {
@@ -22824,7 +22824,7 @@
         ]
       },
       "AuditRecordArrayResponse": {
-        "title": "AuditRecord objects Data Response",
+        "title": "AuditRecordsResponse",
         "description": "List of AuditRecords response. Returns list of lib.AuditRecord objects",
         "type": "object",
         "properties": {
@@ -22840,7 +22840,7 @@
         ]
       },
       "UserDomainRequest": {
-        "title": "UserDomain object Data Request",
+        "title": "UserDomainRequest",
         "description": "UserDomain based request",
         "type": "object",
         "properties": {
@@ -22853,7 +22853,7 @@
         ]
       },
       "UserDomainResponse": {
-        "title": "UserDomain object Data Response",
+        "title": "UserDomainResponse",
         "description": "UserDomain based response. Returns single lib.UserDomain object",
         "type": "object",
         "properties": {
@@ -22866,7 +22866,7 @@
         ]
       },
       "UserDomainArrayResponse": {
-        "title": "UserDomain objects Data Response",
+        "title": "UserDomainsResponse",
         "description": "List of UserDomains response. Returns list of lib.UserDomain objects",
         "type": "object",
         "properties": {
@@ -22882,7 +22882,7 @@
         ]
       },
       "GroupRequest": {
-        "title": "Group object Data Request",
+        "title": "GroupRequest",
         "description": "Group based request",
         "type": "object",
         "properties": {
@@ -22895,7 +22895,7 @@
         ]
       },
       "GroupResponse": {
-        "title": "Group object Data Response",
+        "title": "GroupResponse",
         "description": "Group based response. Returns single lib.Group object",
         "type": "object",
         "properties": {
@@ -22908,7 +22908,7 @@
         ]
       },
       "GroupArrayResponse": {
-        "title": "Group objects Data Response",
+        "title": "GroupsResponse",
         "description": "List of Groups response. Returns list of lib.Group objects",
         "type": "object",
         "properties": {
