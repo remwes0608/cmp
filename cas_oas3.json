@@ -27751,11 +27751,6 @@
     "requestBodies": {},
     "headers": {},
     "securitySchemes": {
-      "basic": {
-        "description": "This API supports Basic Authentication.\n",
-        "type": "http",
-        "scheme": "basic"
-      },
       "oauth_2_0": {
         "description": "This API supports OAuth 2.0 for authenticating all API requests.\n",
         "type": "oauth2",
