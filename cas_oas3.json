@@ -99,7 +99,7 @@
           }
         },
         "description": "Find Tag objects using query parameter filter criteria.",
-        "operationId": "Find Tag objects",
+        "operationId": "GetTag",
         "parameters": [
           {
             "name": "count",
@@ -232,7 +232,7 @@
           }
         },
         "description": "Create new Tag object.",
-        "operationId": "Create Tag object",
+        "operationId": "CreateTag",
         "requestBody": {
           "content": {
             "application/vnd.api+json": {
@@ -323,7 +323,7 @@
           }
         },
         "description": "Find Tag object by tagId URL path parameter.",
-        "operationId": "Find Tag object by Id",
+        "operationId": "GetTagById",
         "parameters": [
           {
             "$ref": "#/components/parameters/trait_common.included_include"
@@ -436,7 +436,7 @@
           }
         },
         "description": "Modify Tag object.\nYou must provide modified id and all modfied attributes in request body.\n",
-        "operationId": "Modify Tag object",
+        "operationId": "ModifyTag",
         "requestBody": {
           "content": {
             "application/vnd.api+json": {
@@ -527,7 +527,7 @@
           }
         },
         "description": "Delete existing Tag object\nNote: This is only allowed if Tag object is in DRAFT status\n",
-        "operationId": "Delete Tag object",
+        "operationId": "DeleteTag",
         "x-annotation-common.oid": 50,
         "x-annotation-common.acl": "modifyTag"
       },
@@ -1070,7 +1070,7 @@
           }
         },
         "description": "Find Object assignments using query parameter filter criteria.",
-        "operationId": "Find Object assignments",
+        "operationId": "GetTagAssignment",
         "parameters": [
           {
             "name": "count",
@@ -1203,7 +1203,7 @@
           }
         },
         "description": "Create new Object assignments.",
-        "operationId": "Create Object assignments",
+        "operationId": "CreateTagAssignment",
         "requestBody": {
           "content": {
             "application/vnd.api+json": {
@@ -1294,7 +1294,7 @@
           }
         },
         "description": "Find Object assignments by tagAssignmentId URL path parameter.",
-        "operationId": "Find Object assignments by Id",
+        "operationId": "GetTagAssignmentById",
         "parameters": [
           {
             "$ref": "#/components/parameters/trait_common.included_include"
@@ -1407,7 +1407,7 @@
           }
         },
         "description": "Modify Object assignments.\nYou must provide modified id and all modfied attributes in request body.\n",
-        "operationId": "Modify Object assignments",
+        "operationId": "ModifyTagAssignment",
         "requestBody": {
           "content": {
             "application/vnd.api+json": {
@@ -1498,7 +1498,7 @@
           }
         },
         "description": "Delete existing Object assignments\nNote: This is only allowed if Object assignments is in DRAFT status\n",
-        "operationId": "Delete Object assignments",
+        "operationId": "DeleteTagAssignment",
         "x-annotation-common.oid": 50,
         "x-annotation-common.acl": "modifyTagAssignment"
       },
@@ -2041,7 +2041,7 @@
           }
         },
         "description": "Find TaggedObject objects using query parameter filter criteria.",
-        "operationId": "Find TaggedObject objects",
+        "operationId": "GetTaggedObject",
         "parameters": [
           {
             "name": "count",
@@ -2174,7 +2174,7 @@
           }
         },
         "description": "Create new TaggedObject object.",
-        "operationId": "Create TaggedObject object",
+        "operationId": "CreateTaggedObject",
         "requestBody": {
           "content": {
             "application/vnd.api+json": {
@@ -2265,7 +2265,7 @@
           }
         },
         "description": "Find TaggedObject object by taggedObjectId URL path parameter.",
-        "operationId": "Find TaggedObject object by Id",
+        "operationId": "GetTaggedObjectById",
         "parameters": [
           {
             "$ref": "#/components/parameters/trait_common.included_include"
@@ -2378,7 +2378,7 @@
           }
         },
         "description": "Modify TaggedObject object.\nYou must provide modified id and all modfied attributes in request body.\n",
-        "operationId": "Modify TaggedObject object",
+        "operationId": "ModifyTaggedObject",
         "requestBody": {
           "content": {
             "application/vnd.api+json": {
@@ -2469,7 +2469,7 @@
           }
         },
         "description": "Delete existing TaggedObject object\nNote: This is only allowed if TaggedObject object is in DRAFT status\n",
-        "operationId": "Delete TaggedObject object",
+        "operationId": "DeleteTaggedObject",
         "x-annotation-common.oid": 50,
         "x-annotation-common.acl": "modifyTaggedObject"
       },
@@ -2559,7 +2559,7 @@
           }
         },
         "description": "Find Acl objects using query parameter filter criteria.",
-        "operationId": "Find Acl objects",
+        "operationId": "GetAcl",
         "parameters": [
           {
             "name": "count",
@@ -2692,7 +2692,7 @@
           }
         },
         "description": "Create new Acl object.",
-        "operationId": "Create Acl object",
+        "operationId": "CreateAcl",
         "requestBody": {
           "content": {
             "application/vnd.api+json": {
@@ -2783,7 +2783,7 @@
           }
         },
         "description": "Find Acl object by aclId URL path parameter.",
-        "operationId": "Find Acl object by Id",
+        "operationId": "GetAclById",
         "parameters": [
           {
             "$ref": "#/components/parameters/trait_common.included_include"
@@ -2896,7 +2896,7 @@
           }
         },
         "description": "Modify Acl object.\nYou must provide modified id and all modfied attributes in request body.\n",
-        "operationId": "Modify Acl object",
+        "operationId": "ModifyAcl",
         "requestBody": {
           "content": {
             "application/vnd.api+json": {
@@ -2987,7 +2987,7 @@
           }
         },
         "description": "Delete existing Acl object\nNote: This is only allowed if Acl object is in DRAFT status\n",
-        "operationId": "Delete Acl object",
+        "operationId": "DeleteAcl",
         "x-annotation-common.oid": 50,
         "x-annotation-common.acl": "modifyAcl"
       },
@@ -3077,7 +3077,7 @@
           }
         },
         "description": "Find AclDelegation objects using query parameter filter criteria.",
-        "operationId": "Find AclDelegation objects",
+        "operationId": "GetAclDelegation",
         "parameters": [
           {
             "name": "count",
@@ -3210,7 +3210,7 @@
           }
         },
         "description": "Create new AclDelegation object.",
-        "operationId": "Create AclDelegation object",
+        "operationId": "CreateAclDelegation",
         "requestBody": {
           "content": {
             "application/vnd.api+json": {
@@ -3301,7 +3301,7 @@
           }
         },
         "description": "Find AclDelegation object by aclDelegationId URL path parameter.",
-        "operationId": "Find AclDelegation object by Id",
+        "operationId": "GetAclDelegationById",
         "parameters": [
           {
             "$ref": "#/components/parameters/trait_common.included_include"
@@ -3414,7 +3414,7 @@
           }
         },
         "description": "Modify AclDelegation object.\nYou must provide modified id and all modfied attributes in request body.\n",
-        "operationId": "Modify AclDelegation object",
+        "operationId": "ModifyAclDelegation",
         "requestBody": {
           "content": {
             "application/vnd.api+json": {
@@ -3505,7 +3505,7 @@
           }
         },
         "description": "Delete existing AclDelegation object\nNote: This is only allowed if AclDelegation object is in DRAFT status\n",
-        "operationId": "Delete AclDelegation object",
+        "operationId": "DeleteAclDelegation",
         "x-annotation-common.oid": 50,
         "x-annotation-common.acl": "modifyAclDelegation"
       },
@@ -3851,7 +3851,7 @@
           }
         },
         "description": "Find AclInfoLocalization objects using query parameter filter criteria.",
-        "operationId": "Find AclInfoLocalization objects",
+        "operationId": "GetAclInfoLocalization",
         "parameters": [
           {
             "name": "count",
@@ -3984,7 +3984,7 @@
           }
         },
         "description": "Create new AclInfoLocalization object.",
-        "operationId": "Create AclInfoLocalization object",
+        "operationId": "CreateAclInfoLocalization",
         "requestBody": {
           "content": {
             "application/vnd.api+json": {
@@ -4075,7 +4075,7 @@
           }
         },
         "description": "Find AclInfoLocalization object by aclInfoLocalizationId URL path parameter.",
-        "operationId": "Find AclInfoLocalization object by Id",
+        "operationId": "GetAclInfoLocalizationById",
         "parameters": [
           {
             "$ref": "#/components/parameters/trait_common.included_include"
@@ -4188,7 +4188,7 @@
           }
         },
         "description": "Modify AclInfoLocalization object.\nYou must provide modified id and all modfied attributes in request body.\n",
-        "operationId": "Modify AclInfoLocalization object",
+        "operationId": "ModifyAclInfoLocalization",
         "requestBody": {
           "content": {
             "application/vnd.api+json": {
@@ -4279,7 +4279,7 @@
           }
         },
         "description": "Delete existing AclInfoLocalization object\nNote: This is only allowed if AclInfoLocalization object is in DRAFT status\n",
-        "operationId": "Delete AclInfoLocalization object",
+        "operationId": "DeleteAclInfoLocalization",
         "x-annotation-common.oid": 50,
         "x-annotation-common.acl": "modifyAclInfoLocalization"
       },
@@ -4369,7 +4369,7 @@
           }
         },
         "description": "Find AclValue objects using query parameter filter criteria.",
-        "operationId": "Find AclValue objects",
+        "operationId": "GetAclValue",
         "parameters": [
           {
             "name": "count",
@@ -4502,7 +4502,7 @@
           }
         },
         "description": "Create new AclValue object.",
-        "operationId": "Create AclValue object",
+        "operationId": "CreateAclValue",
         "requestBody": {
           "content": {
             "application/vnd.api+json": {
@@ -4593,7 +4593,7 @@
           }
         },
         "description": "Find AclValue object by aclValueId URL path parameter.",
-        "operationId": "Find AclValue object by Id",
+        "operationId": "GetAclValueById",
         "parameters": [
           {
             "$ref": "#/components/parameters/trait_common.included_include"
@@ -4706,7 +4706,7 @@
           }
         },
         "description": "Modify AclValue object.\nYou must provide modified id and all modfied attributes in request body.\n",
-        "operationId": "Modify AclValue object",
+        "operationId": "ModifyAclValue",
         "requestBody": {
           "content": {
             "application/vnd.api+json": {
@@ -4797,7 +4797,7 @@
           }
         },
         "description": "Delete existing AclValue object\nNote: This is only allowed if AclValue object is in DRAFT status\n",
-        "operationId": "Delete AclValue object",
+        "operationId": "DeleteAclValue",
         "x-annotation-common.oid": 50,
         "x-annotation-common.acl": "modifyAclValue"
       },
@@ -4887,7 +4887,7 @@
           }
         },
         "description": "Find AclValueBlob objects using query parameter filter criteria.",
-        "operationId": "Find AclValueBlob objects",
+        "operationId": "GetAclValueBlob",
         "parameters": [
           {
             "name": "count",
@@ -5020,7 +5020,7 @@
           }
         },
         "description": "Create new AclValueBlob object.",
-        "operationId": "Create AclValueBlob object",
+        "operationId": "CreateAclValueBlob",
         "requestBody": {
           "content": {
             "application/vnd.api+json": {
@@ -5111,7 +5111,7 @@
           }
         },
         "description": "Find AclValueBlob object by aclValueBlobId URL path parameter.",
-        "operationId": "Find AclValueBlob object by Id",
+        "operationId": "GetAclValueBlobById",
         "parameters": [
           {
             "$ref": "#/components/parameters/trait_common.included_include"
@@ -5224,7 +5224,7 @@
           }
         },
         "description": "Modify AclValueBlob object.\nYou must provide modified id and all modfied attributes in request body.\n",
-        "operationId": "Modify AclValueBlob object",
+        "operationId": "ModifyAclValueBlob",
         "requestBody": {
           "content": {
             "application/vnd.api+json": {
@@ -5315,7 +5315,7 @@
           }
         },
         "description": "Delete existing AclValueBlob object\nNote: This is only allowed if AclValueBlob object is in DRAFT status\n",
-        "operationId": "Delete AclValueBlob object",
+        "operationId": "DeleteAclValueBlob",
         "x-annotation-common.oid": 50,
         "x-annotation-common.acl": "modifyAclValueBlob"
       },
@@ -5405,7 +5405,7 @@
           }
         },
         "description": "Find AccessControlItem objects using query parameter filter criteria.",
-        "operationId": "Find AccessControlItem objects",
+        "operationId": "GetAccessControlItem",
         "parameters": [
           {
             "name": "count",
@@ -5538,7 +5538,7 @@
           }
         },
         "description": "Create new AccessControlItem object.",
-        "operationId": "Create AccessControlItem object",
+        "operationId": "CreateAccessControlItem",
         "requestBody": {
           "content": {
             "application/vnd.api+json": {
@@ -5629,7 +5629,7 @@
           }
         },
         "description": "Find AccessControlItem object by accessControlItemId URL path parameter.",
-        "operationId": "Find AccessControlItem object by Id",
+        "operationId": "GetAccessControlItemById",
         "parameters": [
           {
             "$ref": "#/components/parameters/trait_common.included_include"
@@ -5742,7 +5742,7 @@
           }
         },
         "description": "Modify AccessControlItem object.\nYou must provide modified id and all modfied attributes in request body.\n",
-        "operationId": "Modify AccessControlItem object",
+        "operationId": "ModifyAccessControlItem",
         "requestBody": {
           "content": {
             "application/vnd.api+json": {
@@ -5833,7 +5833,7 @@
           }
         },
         "description": "Delete existing AccessControlItem object\nNote: This is only allowed if AccessControlItem object is in DRAFT status\n",
-        "operationId": "Delete AccessControlItem object",
+        "operationId": "DeleteAccessControlItem",
         "x-annotation-common.oid": 50,
         "x-annotation-common.acl": "modifyAccessControlItem"
       },
@@ -5923,7 +5923,7 @@
           }
         },
         "description": "Find AccessControlItemValue objects using query parameter filter criteria.",
-        "operationId": "Find AccessControlItemValue objects",
+        "operationId": "GetAccessControlItemValue",
         "parameters": [
           {
             "name": "count",
@@ -6056,7 +6056,7 @@
           }
         },
         "description": "Create new AccessControlItemValue object.",
-        "operationId": "Create AccessControlItemValue object",
+        "operationId": "CreateAccessControlItemValue",
         "requestBody": {
           "content": {
             "application/vnd.api+json": {
@@ -6147,7 +6147,7 @@
           }
         },
         "description": "Find AccessControlItemValue object by accessControlItemValueId URL path parameter.",
-        "operationId": "Find AccessControlItemValue object by Id",
+        "operationId": "GetAccessControlItemValueById",
         "parameters": [
           {
             "$ref": "#/components/parameters/trait_common.included_include"
@@ -6260,7 +6260,7 @@
           }
         },
         "description": "Modify AccessControlItemValue object.\nYou must provide modified id and all modfied attributes in request body.\n",
-        "operationId": "Modify AccessControlItemValue object",
+        "operationId": "ModifyAccessControlItemValue",
         "requestBody": {
           "content": {
             "application/vnd.api+json": {
@@ -6351,7 +6351,7 @@
           }
         },
         "description": "Delete existing AccessControlItemValue object\nNote: This is only allowed if AccessControlItemValue object is in DRAFT status\n",
-        "operationId": "Delete AccessControlItemValue object",
+        "operationId": "DeleteAccessControlItemValue",
         "x-annotation-common.oid": 50,
         "x-annotation-common.acl": "modifyAccessControlItemValue"
       },
@@ -6441,7 +6441,7 @@
           }
         },
         "description": "Find AccessControlItemValueBlob objects using query parameter filter criteria.",
-        "operationId": "Find AccessControlItemValueBlob objects",
+        "operationId": "GetAccessControlItemValueBlob",
         "parameters": [
           {
             "name": "count",
@@ -6574,7 +6574,7 @@
           }
         },
         "description": "Create new AccessControlItemValueBlob object.",
-        "operationId": "Create AccessControlItemValueBlob object",
+        "operationId": "CreateAccessControlItemValueBlob",
         "requestBody": {
           "content": {
             "application/vnd.api+json": {
@@ -6665,7 +6665,7 @@
           }
         },
         "description": "Find AccessControlItemValueBlob object by accessControlItemValueBlobId URL path parameter.",
-        "operationId": "Find AccessControlItemValueBlob object by Id",
+        "operationId": "GetAccessControlItemValueBlobById",
         "parameters": [
           {
             "$ref": "#/components/parameters/trait_common.included_include"
@@ -6778,7 +6778,7 @@
           }
         },
         "description": "Modify AccessControlItemValueBlob object.\nYou must provide modified id and all modfied attributes in request body.\n",
-        "operationId": "Modify AccessControlItemValueBlob object",
+        "operationId": "ModifyAccessControlItemValueBlob",
         "requestBody": {
           "content": {
             "application/vnd.api+json": {
@@ -6869,7 +6869,7 @@
           }
         },
         "description": "Delete existing AccessControlItemValueBlob object\nNote: This is only allowed if AccessControlItemValueBlob object is in DRAFT status\n",
-        "operationId": "Delete AccessControlItemValueBlob object",
+        "operationId": "DeleteAccessControlItemValueBlob",
         "x-annotation-common.oid": 50,
         "x-annotation-common.acl": "modifyAccessControlItemValueBlob"
       },
@@ -6959,7 +6959,7 @@
           }
         },
         "description": "Find User objects using query parameter filter criteria.",
-        "operationId": "Find User objects",
+        "operationId": "GetUser",
         "parameters": [
           {
             "name": "count",
@@ -7092,7 +7092,7 @@
           }
         },
         "description": "Create new User object.",
-        "operationId": "Create User object",
+        "operationId": "CreateUser",
         "requestBody": {
           "content": {
             "application/vnd.api+json": {
@@ -7183,7 +7183,7 @@
           }
         },
         "description": "Find User object by userId URL path parameter.",
-        "operationId": "Find User object by Id",
+        "operationId": "GetUserById",
         "parameters": [
           {
             "$ref": "#/components/parameters/trait_common.included_include"
@@ -7296,7 +7296,7 @@
           }
         },
         "description": "Modify User object.\nYou must provide modified id and all modfied attributes in request body.\n",
-        "operationId": "Modify User object",
+        "operationId": "ModifyUser",
         "requestBody": {
           "content": {
             "application/vnd.api+json": {
@@ -7387,7 +7387,7 @@
           }
         },
         "description": "Delete existing User object\nNote: This is only allowed if User object is in DRAFT status\n",
-        "operationId": "Delete User object",
+        "operationId": "DeleteUser",
         "x-annotation-common.oid": 50,
         "x-annotation-common.acl": "modifyUser"
       },
@@ -7477,7 +7477,7 @@
           }
         },
         "description": "Find UserPasswordToken objects using query parameter filter criteria.",
-        "operationId": "Find UserPasswordToken objects",
+        "operationId": "GetUserPasswordToken",
         "parameters": [
           {
             "name": "count",
@@ -7610,7 +7610,7 @@
           }
         },
         "description": "Create new UserPasswordToken object.",
-        "operationId": "Create UserPasswordToken object",
+        "operationId": "CreateUserPasswordToken",
         "requestBody": {
           "content": {
             "application/vnd.api+json": {
@@ -7701,7 +7701,7 @@
           }
         },
         "description": "Find UserPasswordToken object by userPasswordTokenId URL path parameter.",
-        "operationId": "Find UserPasswordToken object by Id",
+        "operationId": "GetUserPasswordTokenById",
         "parameters": [
           {
             "$ref": "#/components/parameters/trait_common.included_include"
@@ -7814,7 +7814,7 @@
           }
         },
         "description": "Modify UserPasswordToken object.\nYou must provide modified id and all modfied attributes in request body.\n",
-        "operationId": "Modify UserPasswordToken object",
+        "operationId": "ModifyUserPasswordToken",
         "requestBody": {
           "content": {
             "application/vnd.api+json": {
@@ -7905,7 +7905,7 @@
           }
         },
         "description": "Delete existing UserPasswordToken object\nNote: This is only allowed if UserPasswordToken object is in DRAFT status\n",
-        "operationId": "Delete UserPasswordToken object",
+        "operationId": "DeleteUserPasswordToken",
         "x-annotation-common.oid": 50,
         "x-annotation-common.acl": "modifyUserPasswordToken"
       },
@@ -7995,7 +7995,7 @@
           }
         },
         "description": "Find OrganizationUnit objects using query parameter filter criteria.",
-        "operationId": "Find OrganizationUnit objects",
+        "operationId": "GetOrganizationUnit",
         "parameters": [
           {
             "name": "count",
@@ -8128,7 +8128,7 @@
           }
         },
         "description": "Create new OrganizationUnit object.",
-        "operationId": "Create OrganizationUnit object",
+        "operationId": "CreateOrganizationUnit",
         "requestBody": {
           "content": {
             "application/vnd.api+json": {
@@ -8219,7 +8219,7 @@
           }
         },
         "description": "Find OrganizationUnit object by organizationUnitId URL path parameter.",
-        "operationId": "Find OrganizationUnit object by Id",
+        "operationId": "GetOrganizationUnitById",
         "parameters": [
           {
             "$ref": "#/components/parameters/trait_common.included_include"
@@ -8332,7 +8332,7 @@
           }
         },
         "description": "Modify OrganizationUnit object.\nYou must provide modified id and all modfied attributes in request body.\n",
-        "operationId": "Modify OrganizationUnit object",
+        "operationId": "ModifyOrganizationUnit",
         "requestBody": {
           "content": {
             "application/vnd.api+json": {
@@ -8423,7 +8423,7 @@
           }
         },
         "description": "Delete existing OrganizationUnit object\nNote: This is only allowed if OrganizationUnit object is in DRAFT status\n",
-        "operationId": "Delete OrganizationUnit object",
+        "operationId": "DeleteOrganizationUnit",
         "x-annotation-common.oid": 50,
         "x-annotation-common.acl": "modifyOrganizationUnit"
       },
@@ -8513,7 +8513,7 @@
           }
         },
         "description": "Find OrganizationUnitAddress objects using query parameter filter criteria.",
-        "operationId": "Find OrganizationUnitAddress objects",
+        "operationId": "GetOrganizationUnitAddress",
         "parameters": [
           {
             "name": "count",
@@ -8646,7 +8646,7 @@
           }
         },
         "description": "Create new OrganizationUnitAddress object.",
-        "operationId": "Create OrganizationUnitAddress object",
+        "operationId": "CreateOrganizationUnitAddress",
         "requestBody": {
           "content": {
             "application/vnd.api+json": {
@@ -8737,7 +8737,7 @@
           }
         },
         "description": "Find OrganizationUnitAddress object by organizationUnitAddressId URL path parameter.",
-        "operationId": "Find OrganizationUnitAddress object by Id",
+        "operationId": "GetOrganizationUnitAddressById",
         "parameters": [
           {
             "$ref": "#/components/parameters/trait_common.included_include"
@@ -8850,7 +8850,7 @@
           }
         },
         "description": "Modify OrganizationUnitAddress object.\nYou must provide modified id and all modfied attributes in request body.\n",
-        "operationId": "Modify OrganizationUnitAddress object",
+        "operationId": "ModifyOrganizationUnitAddress",
         "requestBody": {
           "content": {
             "application/vnd.api+json": {
@@ -8941,7 +8941,7 @@
           }
         },
         "description": "Delete existing OrganizationUnitAddress object\nNote: This is only allowed if OrganizationUnitAddress object is in DRAFT status\n",
-        "operationId": "Delete OrganizationUnitAddress object",
+        "operationId": "DeleteOrganizationUnitAddress",
         "x-annotation-common.oid": 50,
         "x-annotation-common.acl": "modifyOrganizationUnitAddress"
       },
@@ -9031,7 +9031,7 @@
           }
         },
         "description": "Find Usergroup objects using query parameter filter criteria.",
-        "operationId": "Find Usergroup objects",
+        "operationId": "GetUsergroup",
         "parameters": [
           {
             "name": "count",
@@ -9164,7 +9164,7 @@
           }
         },
         "description": "Create new Usergroup object.",
-        "operationId": "Create Usergroup object",
+        "operationId": "CreateUsergroup",
         "requestBody": {
           "content": {
             "application/vnd.api+json": {
@@ -9255,7 +9255,7 @@
           }
         },
         "description": "Find Usergroup object by usergroupId URL path parameter.",
-        "operationId": "Find Usergroup object by Id",
+        "operationId": "GetUsergroupById",
         "parameters": [
           {
             "$ref": "#/components/parameters/trait_common.included_include"
@@ -9368,7 +9368,7 @@
           }
         },
         "description": "Modify Usergroup object.\nYou must provide modified id and all modfied attributes in request body.\n",
-        "operationId": "Modify Usergroup object",
+        "operationId": "ModifyUsergroup",
         "requestBody": {
           "content": {
             "application/vnd.api+json": {
@@ -9459,7 +9459,7 @@
           }
         },
         "description": "Delete existing Usergroup object\nNote: This is only allowed if Usergroup object is in DRAFT status\n",
-        "operationId": "Delete Usergroup object",
+        "operationId": "DeleteUsergroup",
         "x-annotation-common.oid": 50,
         "x-annotation-common.acl": "modifyUsergroup"
       },
@@ -9549,7 +9549,7 @@
           }
         },
         "description": "Find UsergroupUser objects using query parameter filter criteria.",
-        "operationId": "Find UsergroupUser objects",
+        "operationId": "GetUsergroupUser",
         "parameters": [
           {
             "name": "count",
@@ -9682,7 +9682,7 @@
           }
         },
         "description": "Create new UsergroupUser object.",
-        "operationId": "Create UsergroupUser object",
+        "operationId": "CreateUsergroupUser",
         "requestBody": {
           "content": {
             "application/vnd.api+json": {
@@ -9773,7 +9773,7 @@
           }
         },
         "description": "Find UsergroupUser object by usergroupUserId URL path parameter.",
-        "operationId": "Find UsergroupUser object by Id",
+        "operationId": "GetUsergroupUserById",
         "parameters": [
           {
             "$ref": "#/components/parameters/trait_common.included_include"
@@ -9886,7 +9886,7 @@
           }
         },
         "description": "Modify UsergroupUser object.\nYou must provide modified id and all modfied attributes in request body.\n",
-        "operationId": "Modify UsergroupUser object",
+        "operationId": "ModifyUsergroupUser",
         "requestBody": {
           "content": {
             "application/vnd.api+json": {
@@ -9977,7 +9977,7 @@
           }
         },
         "description": "Delete existing UsergroupUser object\nNote: This is only allowed if UsergroupUser object is in DRAFT status\n",
-        "operationId": "Delete UsergroupUser object",
+        "operationId": "DeleteUsergroupUser",
         "x-annotation-common.oid": 50,
         "x-annotation-common.acl": "modifyUsergroupUser"
       },
@@ -10067,7 +10067,7 @@
           }
         },
         "description": "Find Context objects using query parameter filter criteria.",
-        "operationId": "Find Context objects",
+        "operationId": "GetContext",
         "parameters": [
           {
             "name": "count",
@@ -10200,7 +10200,7 @@
           }
         },
         "description": "Create new Context object.",
-        "operationId": "Create Context object",
+        "operationId": "CreateContext",
         "requestBody": {
           "content": {
             "application/vnd.api+json": {
@@ -10291,7 +10291,7 @@
           }
         },
         "description": "Find Context object by contextId URL path parameter.",
-        "operationId": "Find Context object by Id",
+        "operationId": "GetContextById",
         "parameters": [
           {
             "$ref": "#/components/parameters/trait_common.included_include"
@@ -10404,7 +10404,7 @@
           }
         },
         "description": "Modify Context object.\nYou must provide modified id and all modfied attributes in request body.\n",
-        "operationId": "Modify Context object",
+        "operationId": "ModifyContext",
         "requestBody": {
           "content": {
             "application/vnd.api+json": {
@@ -10495,7 +10495,7 @@
           }
         },
         "description": "Delete existing Context object\nNote: This is only allowed if Context object is in DRAFT status\n",
-        "operationId": "Delete Context object",
+        "operationId": "DeleteContext",
         "x-annotation-common.oid": 50,
         "x-annotation-common.acl": "modifyContext"
       },
@@ -10585,7 +10585,7 @@
           }
         },
         "description": "Find ContextUser objects using query parameter filter criteria.",
-        "operationId": "Find ContextUser objects",
+        "operationId": "GetContextUser",
         "parameters": [
           {
             "name": "count",
@@ -10718,7 +10718,7 @@
           }
         },
         "description": "Create new ContextUser object.",
-        "operationId": "Create ContextUser object",
+        "operationId": "CreateContextUser",
         "requestBody": {
           "content": {
             "application/vnd.api+json": {
@@ -10809,7 +10809,7 @@
           }
         },
         "description": "Find ContextUser object by contextUserId URL path parameter.",
-        "operationId": "Find ContextUser object by Id",
+        "operationId": "GetContextUserById",
         "parameters": [
           {
             "$ref": "#/components/parameters/trait_common.included_include"
@@ -10922,7 +10922,7 @@
           }
         },
         "description": "Modify ContextUser object.\nYou must provide modified id and all modfied attributes in request body.\n",
-        "operationId": "Modify ContextUser object",
+        "operationId": "ModifyContextUser",
         "requestBody": {
           "content": {
             "application/vnd.api+json": {
@@ -11013,7 +11013,7 @@
           }
         },
         "description": "Delete existing ContextUser object\nNote: This is only allowed if ContextUser object is in DRAFT status\n",
-        "operationId": "Delete ContextUser object",
+        "operationId": "DeleteContextUser",
         "x-annotation-common.oid": 50,
         "x-annotation-common.acl": "modifyContextUser"
       },
@@ -11103,7 +11103,7 @@
           }
         },
         "description": "Find Avatar objects using query parameter filter criteria.",
-        "operationId": "Find Avatar objects",
+        "operationId": "GetAvatar",
         "parameters": [
           {
             "name": "count",
@@ -11236,7 +11236,7 @@
           }
         },
         "description": "Create new Avatar object.",
-        "operationId": "Create Avatar object",
+        "operationId": "CreateAvatar",
         "requestBody": {
           "content": {
             "application/vnd.api+json": {
@@ -11327,7 +11327,7 @@
           }
         },
         "description": "Find Avatar object by avatarId URL path parameter.",
-        "operationId": "Find Avatar object by Id",
+        "operationId": "GetAvatarById",
         "parameters": [
           {
             "$ref": "#/components/parameters/trait_common.included_include"
@@ -11440,7 +11440,7 @@
           }
         },
         "description": "Modify Avatar object.\nYou must provide modified id and all modfied attributes in request body.\n",
-        "operationId": "Modify Avatar object",
+        "operationId": "ModifyAvatar",
         "requestBody": {
           "content": {
             "application/vnd.api+json": {
@@ -11531,7 +11531,7 @@
           }
         },
         "description": "Delete existing Avatar object\nNote: This is only allowed if Avatar object is in DRAFT status\n",
-        "operationId": "Delete Avatar object",
+        "operationId": "DeleteAvatar",
         "x-annotation-common.oid": 50,
         "x-annotation-common.acl": "modifyAvatar"
       },
@@ -11621,7 +11621,7 @@
           }
         },
         "description": "Find Casuser objects using query parameter filter criteria.",
-        "operationId": "Find Casuser objects",
+        "operationId": "GetCasuser",
         "parameters": [
           {
             "name": "count",
@@ -11754,7 +11754,7 @@
           }
         },
         "description": "Create new Casuser object.",
-        "operationId": "Create Casuser object",
+        "operationId": "CreateCasuser",
         "requestBody": {
           "content": {
             "application/vnd.api+json": {
@@ -11845,7 +11845,7 @@
           }
         },
         "description": "Find Casuser object by casuserId URL path parameter.",
-        "operationId": "Find Casuser object by Id",
+        "operationId": "GetCasuserById",
         "parameters": [
           {
             "$ref": "#/components/parameters/trait_common.included_include"
@@ -11958,7 +11958,7 @@
           }
         },
         "description": "Modify Casuser object.\nYou must provide modified id and all modfied attributes in request body.\n",
-        "operationId": "Modify Casuser object",
+        "operationId": "ModifyCasuser",
         "requestBody": {
           "content": {
             "application/vnd.api+json": {
@@ -12049,7 +12049,7 @@
           }
         },
         "description": "Delete existing Casuser object\nNote: This is only allowed if Casuser object is in DRAFT status\n",
-        "operationId": "Delete Casuser object",
+        "operationId": "DeleteCasuser",
         "x-annotation-common.oid": 50,
         "x-annotation-common.acl": "modifyCasuser"
       },
@@ -12405,7 +12405,7 @@
           }
         },
         "description": "Find Customer objects using query parameter filter criteria.",
-        "operationId": "Find Customer objects",
+        "operationId": "GetCustomer",
         "parameters": [
           {
             "name": "count",
@@ -12538,7 +12538,7 @@
           }
         },
         "description": "Create new Customer object.",
-        "operationId": "Create Customer object",
+        "operationId": "CreateCustomer",
         "requestBody": {
           "content": {
             "application/vnd.api+json": {
@@ -12629,7 +12629,7 @@
           }
         },
         "description": "Find Customer object by customerId URL path parameter.",
-        "operationId": "Find Customer object by Id",
+        "operationId": "GetCustomerById",
         "parameters": [
           {
             "$ref": "#/components/parameters/trait_common.included_include"
@@ -12742,7 +12742,7 @@
           }
         },
         "description": "Modify Customer object.\nYou must provide modified id and all modfied attributes in request body.\n",
-        "operationId": "Modify Customer object",
+        "operationId": "ModifyCustomer",
         "requestBody": {
           "content": {
             "application/vnd.api+json": {
@@ -12833,7 +12833,7 @@
           }
         },
         "description": "Delete existing Customer object\nNote: This is only allowed if Customer object is in DRAFT status\n",
-        "operationId": "Delete Customer object",
+        "operationId": "DeleteCustomer",
         "x-annotation-common.oid": 50,
         "x-annotation-common.acl": "modifyCustomer"
       },
@@ -12923,7 +12923,7 @@
           }
         },
         "description": "Find Csp objects using query parameter filter criteria.",
-        "operationId": "Find Csp objects",
+        "operationId": "GetCsp",
         "parameters": [
           {
             "name": "count",
@@ -13056,7 +13056,7 @@
           }
         },
         "description": "Create new Csp object.",
-        "operationId": "Create Csp object",
+        "operationId": "CreateCsp",
         "requestBody": {
           "content": {
             "application/vnd.api+json": {
@@ -13147,7 +13147,7 @@
           }
         },
         "description": "Find Csp object by cspId URL path parameter.",
-        "operationId": "Find Csp object by Id",
+        "operationId": "GetCspById",
         "parameters": [
           {
             "$ref": "#/components/parameters/trait_common.included_include"
@@ -13260,7 +13260,7 @@
           }
         },
         "description": "Modify Csp object.\nYou must provide modified id and all modfied attributes in request body.\n",
-        "operationId": "Modify Csp object",
+        "operationId": "ModifyCsp",
         "requestBody": {
           "content": {
             "application/vnd.api+json": {
@@ -13351,7 +13351,7 @@
           }
         },
         "description": "Delete existing Csp object\nNote: This is only allowed if Csp object is in DRAFT status\n",
-        "operationId": "Delete Csp object",
+        "operationId": "DeleteCsp",
         "x-annotation-common.oid": 50,
         "x-annotation-common.acl": "modifyCsp"
       },
@@ -13441,7 +13441,7 @@
           }
         },
         "description": "Find Domain objects using query parameter filter criteria.",
-        "operationId": "Find Domain objects",
+        "operationId": "GetDomain",
         "parameters": [
           {
             "name": "count",
@@ -13574,7 +13574,7 @@
           }
         },
         "description": "Create new Domain object.",
-        "operationId": "Create Domain object",
+        "operationId": "CreateDomain",
         "requestBody": {
           "content": {
             "application/vnd.api+json": {
@@ -13665,7 +13665,7 @@
           }
         },
         "description": "Find Domain object by domainId URL path parameter.",
-        "operationId": "Find Domain object by Id",
+        "operationId": "GetDomainById",
         "parameters": [
           {
             "$ref": "#/components/parameters/trait_common.included_include"
@@ -13778,7 +13778,7 @@
           }
         },
         "description": "Modify Domain object.\nYou must provide modified id and all modfied attributes in request body.\n",
-        "operationId": "Modify Domain object",
+        "operationId": "ModifyDomain",
         "requestBody": {
           "content": {
             "application/vnd.api+json": {
@@ -13869,7 +13869,7 @@
           }
         },
         "description": "Delete existing Domain object\nNote: This is only allowed if Domain object is in DRAFT status\n",
-        "operationId": "Delete Domain object",
+        "operationId": "DeleteDomain",
         "x-annotation-common.oid": 50,
         "x-annotation-common.acl": "modifyDomain"
       },
@@ -13959,7 +13959,7 @@
           }
         },
         "description": "Find EmailTemplatePart objects using query parameter filter criteria.",
-        "operationId": "Find EmailTemplatePart objects",
+        "operationId": "GetEmailTemplatePart",
         "parameters": [
           {
             "name": "count",
@@ -14092,7 +14092,7 @@
           }
         },
         "description": "Create new EmailTemplatePart object.",
-        "operationId": "Create EmailTemplatePart object",
+        "operationId": "CreateEmailTemplatePart",
         "requestBody": {
           "content": {
             "application/vnd.api+json": {
@@ -14183,7 +14183,7 @@
           }
         },
         "description": "Find EmailTemplatePart object by emailTemplatePartId URL path parameter.",
-        "operationId": "Find EmailTemplatePart object by Id",
+        "operationId": "GetEmailTemplatePartById",
         "parameters": [
           {
             "$ref": "#/components/parameters/trait_common.included_include"
@@ -14296,7 +14296,7 @@
           }
         },
         "description": "Modify EmailTemplatePart object.\nYou must provide modified id and all modfied attributes in request body.\n",
-        "operationId": "Modify EmailTemplatePart object",
+        "operationId": "ModifyEmailTemplatePart",
         "requestBody": {
           "content": {
             "application/vnd.api+json": {
@@ -14387,7 +14387,7 @@
           }
         },
         "description": "Delete existing EmailTemplatePart object\nNote: This is only allowed if EmailTemplatePart object is in DRAFT status\n",
-        "operationId": "Delete EmailTemplatePart object",
+        "operationId": "DeleteEmailTemplatePart",
         "x-annotation-common.oid": 50,
         "x-annotation-common.acl": "modifyEmailTemplatePart"
       },
@@ -14477,7 +14477,7 @@
           }
         },
         "description": "Find LogUsrTag objects using query parameter filter criteria.",
-        "operationId": "Find LogUsrTag objects",
+        "operationId": "GetLogUsrTag",
         "parameters": [
           {
             "name": "count",
@@ -14610,7 +14610,7 @@
           }
         },
         "description": "Create new LogUsrTag object.",
-        "operationId": "Create LogUsrTag object",
+        "operationId": "CreateLogUsrTag",
         "requestBody": {
           "content": {
             "application/vnd.api+json": {
@@ -14701,7 +14701,7 @@
           }
         },
         "description": "Find LogUsrTag object by logUsrTagId URL path parameter.",
-        "operationId": "Find LogUsrTag object by Id",
+        "operationId": "GetLogUsrTagById",
         "parameters": [
           {
             "$ref": "#/components/parameters/trait_common.included_include"
@@ -14814,7 +14814,7 @@
           }
         },
         "description": "Modify LogUsrTag object.\nYou must provide modified id and all modfied attributes in request body.\n",
-        "operationId": "Modify LogUsrTag object",
+        "operationId": "ModifyLogUsrTag",
         "requestBody": {
           "content": {
             "application/vnd.api+json": {
@@ -14905,7 +14905,7 @@
           }
         },
         "description": "Delete existing LogUsrTag object\nNote: This is only allowed if LogUsrTag object is in DRAFT status\n",
-        "operationId": "Delete LogUsrTag object",
+        "operationId": "DeleteLogUsrTag",
         "x-annotation-common.oid": 50,
         "x-annotation-common.acl": "modifyLogUsrTag"
       },
@@ -14995,7 +14995,7 @@
           }
         },
         "description": "Find LogUsrTagAssignment objects using query parameter filter criteria.",
-        "operationId": "Find LogUsrTagAssignment objects",
+        "operationId": "GetLogUsrTagAssignment",
         "parameters": [
           {
             "name": "count",
@@ -15128,7 +15128,7 @@
           }
         },
         "description": "Create new LogUsrTagAssignment object.",
-        "operationId": "Create LogUsrTagAssignment object",
+        "operationId": "CreateLogUsrTagAssignment",
         "requestBody": {
           "content": {
             "application/vnd.api+json": {
@@ -15219,7 +15219,7 @@
           }
         },
         "description": "Find LogUsrTagAssignment object by logUsrTagAssignmentId URL path parameter.",
-        "operationId": "Find LogUsrTagAssignment object by Id",
+        "operationId": "GetLogUsrTagAssignmentById",
         "parameters": [
           {
             "$ref": "#/components/parameters/trait_common.included_include"
@@ -15332,7 +15332,7 @@
           }
         },
         "description": "Modify LogUsrTagAssignment object.\nYou must provide modified id and all modfied attributes in request body.\n",
-        "operationId": "Modify LogUsrTagAssignment object",
+        "operationId": "ModifyLogUsrTagAssignment",
         "requestBody": {
           "content": {
             "application/vnd.api+json": {
@@ -15423,7 +15423,7 @@
           }
         },
         "description": "Delete existing LogUsrTagAssignment object\nNote: This is only allowed if LogUsrTagAssignment object is in DRAFT status\n",
-        "operationId": "Delete LogUsrTagAssignment object",
+        "operationId": "DeleteLogUsrTagAssignment",
         "x-annotation-common.oid": 50,
         "x-annotation-common.acl": "modifyLogUsrTagAssignment"
       },
@@ -15513,7 +15513,7 @@
           }
         },
         "description": "Find MessageLocalization objects using query parameter filter criteria.",
-        "operationId": "Find MessageLocalization objects",
+        "operationId": "GetMessageLocalization",
         "parameters": [
           {
             "name": "count",
@@ -15646,7 +15646,7 @@
           }
         },
         "description": "Create new MessageLocalization object.",
-        "operationId": "Create MessageLocalization object",
+        "operationId": "CreateMessageLocalization",
         "requestBody": {
           "content": {
             "application/vnd.api+json": {
@@ -15737,7 +15737,7 @@
           }
         },
         "description": "Find MessageLocalization object by messageLocalizationId URL path parameter.",
-        "operationId": "Find MessageLocalization object by Id",
+        "operationId": "GetMessageLocalizationById",
         "parameters": [
           {
             "$ref": "#/components/parameters/trait_common.included_include"
@@ -15850,7 +15850,7 @@
           }
         },
         "description": "Modify MessageLocalization object.\nYou must provide modified id and all modfied attributes in request body.\n",
-        "operationId": "Modify MessageLocalization object",
+        "operationId": "ModifyMessageLocalization",
         "requestBody": {
           "content": {
             "application/vnd.api+json": {
@@ -15941,7 +15941,7 @@
           }
         },
         "description": "Delete existing MessageLocalization object\nNote: This is only allowed if MessageLocalization object is in DRAFT status\n",
-        "operationId": "Delete MessageLocalization object",
+        "operationId": "DeleteMessageLocalization",
         "x-annotation-common.oid": 50,
         "x-annotation-common.acl": "modifyMessageLocalization"
       },
@@ -16031,7 +16031,7 @@
           }
         },
         "description": "Find MessageTemplate objects using query parameter filter criteria.",
-        "operationId": "Find MessageTemplate objects",
+        "operationId": "GetMessageTemplate",
         "parameters": [
           {
             "name": "count",
@@ -16164,7 +16164,7 @@
           }
         },
         "description": "Create new MessageTemplate object.",
-        "operationId": "Create MessageTemplate object",
+        "operationId": "CreateMessageTemplate",
         "requestBody": {
           "content": {
             "application/vnd.api+json": {
@@ -16255,7 +16255,7 @@
           }
         },
         "description": "Find MessageTemplate object by messageTemplateId URL path parameter.",
-        "operationId": "Find MessageTemplate object by Id",
+        "operationId": "GetMessageTemplateById",
         "parameters": [
           {
             "$ref": "#/components/parameters/trait_common.included_include"
@@ -16368,7 +16368,7 @@
           }
         },
         "description": "Modify MessageTemplate object.\nYou must provide modified id and all modfied attributes in request body.\n",
-        "operationId": "Modify MessageTemplate object",
+        "operationId": "ModifyMessageTemplate",
         "requestBody": {
           "content": {
             "application/vnd.api+json": {
@@ -16459,7 +16459,7 @@
           }
         },
         "description": "Delete existing MessageTemplate object\nNote: This is only allowed if MessageTemplate object is in DRAFT status\n",
-        "operationId": "Delete MessageTemplate object",
+        "operationId": "DeleteMessageTemplate",
         "x-annotation-common.oid": 50,
         "x-annotation-common.acl": "modifyMessageTemplate"
       },
@@ -16549,7 +16549,7 @@
           }
         },
         "description": "Find Module objects using query parameter filter criteria.",
-        "operationId": "Find Module objects",
+        "operationId": "GetModule",
         "parameters": [
           {
             "name": "count",
@@ -16682,7 +16682,7 @@
           }
         },
         "description": "Create new Module object.",
-        "operationId": "Create Module object",
+        "operationId": "CreateModule",
         "requestBody": {
           "content": {
             "application/vnd.api+json": {
@@ -16773,7 +16773,7 @@
           }
         },
         "description": "Find Module object by moduleId URL path parameter.",
-        "operationId": "Find Module object by Id",
+        "operationId": "GetModuleById",
         "parameters": [
           {
             "$ref": "#/components/parameters/trait_common.included_include"
@@ -16886,7 +16886,7 @@
           }
         },
         "description": "Modify Module object.\nYou must provide modified id and all modfied attributes in request body.\n",
-        "operationId": "Modify Module object",
+        "operationId": "ModifyModule",
         "requestBody": {
           "content": {
             "application/vnd.api+json": {
@@ -16977,7 +16977,7 @@
           }
         },
         "description": "Delete existing Module object\nNote: This is only allowed if Module object is in DRAFT status\n",
-        "operationId": "Delete Module object",
+        "operationId": "DeleteModule",
         "x-annotation-common.oid": 50,
         "x-annotation-common.acl": "modifyModule"
       },
@@ -17067,7 +17067,7 @@
           }
         },
         "description": "Find Notification objects using query parameter filter criteria.",
-        "operationId": "Find Notification objects",
+        "operationId": "GetNotification",
         "parameters": [
           {
             "name": "count",
@@ -17200,7 +17200,7 @@
           }
         },
         "description": "Create new Notification object.",
-        "operationId": "Create Notification object",
+        "operationId": "CreateNotification",
         "requestBody": {
           "content": {
             "application/vnd.api+json": {
@@ -17291,7 +17291,7 @@
           }
         },
         "description": "Find Notification object by notificationId URL path parameter.",
-        "operationId": "Find Notification object by Id",
+        "operationId": "GetNotificationById",
         "parameters": [
           {
             "$ref": "#/components/parameters/trait_common.included_include"
@@ -17404,7 +17404,7 @@
           }
         },
         "description": "Modify Notification object.\nYou must provide modified id and all modfied attributes in request body.\n",
-        "operationId": "Modify Notification object",
+        "operationId": "ModifyNotification",
         "requestBody": {
           "content": {
             "application/vnd.api+json": {
@@ -17495,7 +17495,7 @@
           }
         },
         "description": "Delete existing Notification object\nNote: This is only allowed if Notification object is in DRAFT status\n",
-        "operationId": "Delete Notification object",
+        "operationId": "DeleteNotification",
         "x-annotation-common.oid": 50,
         "x-annotation-common.acl": "modifyNotification"
       },
@@ -17585,7 +17585,7 @@
           }
         },
         "description": "Find Orgunit objects using query parameter filter criteria.",
-        "operationId": "Find Orgunit objects",
+        "operationId": "GetOrgunit",
         "parameters": [
           {
             "name": "count",
@@ -17718,7 +17718,7 @@
           }
         },
         "description": "Create new Orgunit object.",
-        "operationId": "Create Orgunit object",
+        "operationId": "CreateOrgunit",
         "requestBody": {
           "content": {
             "application/vnd.api+json": {
@@ -17809,7 +17809,7 @@
           }
         },
         "description": "Find Orgunit object by orgunitId URL path parameter.",
-        "operationId": "Find Orgunit object by Id",
+        "operationId": "GetOrgunitById",
         "parameters": [
           {
             "$ref": "#/components/parameters/trait_common.included_include"
@@ -17922,7 +17922,7 @@
           }
         },
         "description": "Modify Orgunit object.\nYou must provide modified id and all modfied attributes in request body.\n",
-        "operationId": "Modify Orgunit object",
+        "operationId": "ModifyOrgunit",
         "requestBody": {
           "content": {
             "application/vnd.api+json": {
@@ -18013,7 +18013,7 @@
           }
         },
         "description": "Delete existing Orgunit object\nNote: This is only allowed if Orgunit object is in DRAFT status\n",
-        "operationId": "Delete Orgunit object",
+        "operationId": "DeleteOrgunit",
         "x-annotation-common.oid": 50,
         "x-annotation-common.acl": "modifyOrgunit"
       },
@@ -18103,7 +18103,7 @@
           }
         },
         "description": "Find Person objects using query parameter filter criteria.",
-        "operationId": "Find Person objects",
+        "operationId": "GetPerson",
         "parameters": [
           {
             "name": "count",
@@ -18236,7 +18236,7 @@
           }
         },
         "description": "Create new Person object.",
-        "operationId": "Create Person object",
+        "operationId": "CreatePerson",
         "requestBody": {
           "content": {
             "application/vnd.api+json": {
@@ -18327,7 +18327,7 @@
           }
         },
         "description": "Find Person object by personId URL path parameter.",
-        "operationId": "Find Person object by Id",
+        "operationId": "GetPersonById",
         "parameters": [
           {
             "$ref": "#/components/parameters/trait_common.included_include"
@@ -18440,7 +18440,7 @@
           }
         },
         "description": "Modify Person object.\nYou must provide modified id and all modfied attributes in request body.\n",
-        "operationId": "Modify Person object",
+        "operationId": "ModifyPerson",
         "requestBody": {
           "content": {
             "application/vnd.api+json": {
@@ -18531,7 +18531,7 @@
           }
         },
         "description": "Delete existing Person object\nNote: This is only allowed if Person object is in DRAFT status\n",
-        "operationId": "Delete Person object",
+        "operationId": "DeletePerson",
         "x-annotation-common.oid": 50,
         "x-annotation-common.acl": "modifyPerson"
       },
@@ -18621,7 +18621,7 @@
           }
         },
         "description": "Find CasResource objects using query parameter filter criteria.",
-        "operationId": "Find CasResource objects",
+        "operationId": "GetCasResource",
         "parameters": [
           {
             "name": "count",
@@ -18754,7 +18754,7 @@
           }
         },
         "description": "Create new CasResource object.",
-        "operationId": "Create CasResource object",
+        "operationId": "CreateCasResource",
         "requestBody": {
           "content": {
             "application/vnd.api+json": {
@@ -18845,7 +18845,7 @@
           }
         },
         "description": "Find CasResource object by casResourceId URL path parameter.",
-        "operationId": "Find CasResource object by Id",
+        "operationId": "GetCasResourceById",
         "parameters": [
           {
             "$ref": "#/components/parameters/trait_common.included_include"
@@ -18958,7 +18958,7 @@
           }
         },
         "description": "Modify CasResource object.\nYou must provide modified id and all modfied attributes in request body.\n",
-        "operationId": "Modify CasResource object",
+        "operationId": "ModifyCasResource",
         "requestBody": {
           "content": {
             "application/vnd.api+json": {
@@ -19049,7 +19049,7 @@
           }
         },
         "description": "Delete existing CasResource object\nNote: This is only allowed if CasResource object is in DRAFT status\n",
-        "operationId": "Delete CasResource object",
+        "operationId": "DeleteCasResource",
         "x-annotation-common.oid": 50,
         "x-annotation-common.acl": "modifyCasResource"
       },
@@ -19139,7 +19139,7 @@
           }
         },
         "description": "Find ResourceValue objects using query parameter filter criteria.",
-        "operationId": "Find ResourceValue objects",
+        "operationId": "GetResourceValue",
         "parameters": [
           {
             "name": "count",
@@ -19272,7 +19272,7 @@
           }
         },
         "description": "Create new ResourceValue object.",
-        "operationId": "Create ResourceValue object",
+        "operationId": "CreateResourceValue",
         "requestBody": {
           "content": {
             "application/vnd.api+json": {
@@ -19363,7 +19363,7 @@
           }
         },
         "description": "Find ResourceValue object by resourceValueId URL path parameter.",
-        "operationId": "Find ResourceValue object by Id",
+        "operationId": "GetResourceValueById",
         "parameters": [
           {
             "$ref": "#/components/parameters/trait_common.included_include"
@@ -19476,7 +19476,7 @@
           }
         },
         "description": "Modify ResourceValue object.\nYou must provide modified id and all modfied attributes in request body.\n",
-        "operationId": "Modify ResourceValue object",
+        "operationId": "ModifyResourceValue",
         "requestBody": {
           "content": {
             "application/vnd.api+json": {
@@ -19567,7 +19567,7 @@
           }
         },
         "description": "Delete existing ResourceValue object\nNote: This is only allowed if ResourceValue object is in DRAFT status\n",
-        "operationId": "Delete ResourceValue object",
+        "operationId": "DeleteResourceValue",
         "x-annotation-common.oid": 50,
         "x-annotation-common.acl": "modifyResourceValue"
       },
@@ -19657,7 +19657,7 @@
           }
         },
         "description": "Find AuditRecord objects using query parameter filter criteria.",
-        "operationId": "Find AuditRecord objects",
+        "operationId": "GetAuditRecord",
         "parameters": [
           {
             "name": "count",
@@ -19790,7 +19790,7 @@
           }
         },
         "description": "Create new AuditRecord object.",
-        "operationId": "Create AuditRecord object",
+        "operationId": "CreateAuditRecord",
         "requestBody": {
           "content": {
             "application/vnd.api+json": {
@@ -19881,7 +19881,7 @@
           }
         },
         "description": "Find AuditRecord object by auditRecordId URL path parameter.",
-        "operationId": "Find AuditRecord object by Id",
+        "operationId": "GetAuditRecordById",
         "parameters": [
           {
             "$ref": "#/components/parameters/trait_common.included_include"
@@ -19994,7 +19994,7 @@
           }
         },
         "description": "Modify AuditRecord object.\nYou must provide modified id and all modfied attributes in request body.\n",
-        "operationId": "Modify AuditRecord object",
+        "operationId": "ModifyAuditRecord",
         "requestBody": {
           "content": {
             "application/vnd.api+json": {
@@ -20085,7 +20085,7 @@
           }
         },
         "description": "Delete existing AuditRecord object\nNote: This is only allowed if AuditRecord object is in DRAFT status\n",
-        "operationId": "Delete AuditRecord object",
+        "operationId": "DeleteAuditRecord",
         "x-annotation-common.oid": 50,
         "x-annotation-common.acl": "modifyAuditRecord"
       },
@@ -20175,7 +20175,7 @@
           }
         },
         "description": "Find UserDomain objects using query parameter filter criteria.",
-        "operationId": "Find UserDomain objects",
+        "operationId": "GetUserDomain",
         "parameters": [
           {
             "name": "count",
@@ -20308,7 +20308,7 @@
           }
         },
         "description": "Create new UserDomain object.",
-        "operationId": "Create UserDomain object",
+        "operationId": "CreateUserDomain",
         "requestBody": {
           "content": {
             "application/vnd.api+json": {
@@ -20399,7 +20399,7 @@
           }
         },
         "description": "Find UserDomain object by userDomainId URL path parameter.",
-        "operationId": "Find UserDomain object by Id",
+        "operationId": "GetUserDomainById",
         "parameters": [
           {
             "$ref": "#/components/parameters/trait_common.included_include"
@@ -20512,7 +20512,7 @@
           }
         },
         "description": "Modify UserDomain object.\nYou must provide modified id and all modfied attributes in request body.\n",
-        "operationId": "Modify UserDomain object",
+        "operationId": "ModifyUserDomain",
         "requestBody": {
           "content": {
             "application/vnd.api+json": {
@@ -20603,7 +20603,7 @@
           }
         },
         "description": "Delete existing UserDomain object\nNote: This is only allowed if UserDomain object is in DRAFT status\n",
-        "operationId": "Delete UserDomain object",
+        "operationId": "DeleteUserDomain",
         "x-annotation-common.oid": 50,
         "x-annotation-common.acl": "modifyUserDomain"
       },
@@ -20693,7 +20693,7 @@
           }
         },
         "description": "Find Group objects using query parameter filter criteria.",
-        "operationId": "Find Group objects",
+        "operationId": "GetGroup",
         "parameters": [
           {
             "name": "count",
@@ -20826,7 +20826,7 @@
           }
         },
         "description": "Create new Group object.",
-        "operationId": "Create Group object",
+        "operationId": "CreateGroup",
         "requestBody": {
           "content": {
             "application/vnd.api+json": {
@@ -20917,7 +20917,7 @@
           }
         },
         "description": "Find Group object by groupId URL path parameter.",
-        "operationId": "Find Group object by Id",
+        "operationId": "GetGroupById",
         "parameters": [
           {
             "$ref": "#/components/parameters/trait_common.included_include"
@@ -21030,7 +21030,7 @@
           }
         },
         "description": "Modify Group object.\nYou must provide modified id and all modfied attributes in request body.\n",
-        "operationId": "Modify Group object",
+        "operationId": "ModifyGroup",
         "requestBody": {
           "content": {
             "application/vnd.api+json": {
@@ -21121,7 +21121,7 @@
           }
         },
         "description": "Delete existing Group object\nNote: This is only allowed if Group object is in DRAFT status\n",
-        "operationId": "Delete Group object",
+        "operationId": "DeleteGroup",
         "x-annotation-common.oid": 50,
         "x-annotation-common.acl": "modifyGroup"
       },
