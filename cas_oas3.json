@@ -9,13 +9,17 @@
     {
       "url": "https://{cspUrl}/services/cas/v1",
       "variables": {
-        "cspUrl": "cmp-demo.mavoco.com"
+        "cspUrl": {
+          "default": "cmp-demo.mavoco.com"
+        }
       }
     },
     {
       "url": "http://{cspUrl}/services/cas/v1",
       "variables": {
-        "cspUrl": "cmp-demo.mavoco.com"
+        "cspUrl": {
+          "default": "cmp-demo.mavoco.com"
+        }
       }
     }
   ],
